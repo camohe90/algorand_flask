@@ -1,0 +1,66 @@
+{
+    "name": "Contract",
+    "methods": [
+        {
+            "name": "hello",
+            "args": [
+                {
+                    "type": "string",
+                    "name": "name"
+                }
+            ],
+            "returns": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "suma",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "num1"
+                },
+                {
+                    "type": "uint64",
+                    "name": "num2"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "resta",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "num1"
+                },
+                {
+                    "type": "uint64",
+                    "name": "num2"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "multiplicacion",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "num1"
+                },
+                {
+                    "type": "uint64",
+                    "name": "num2"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        }
+    ],
+    "networks": {}
+}

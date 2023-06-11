@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        form {
+            margin-bottom: 20px;
+        }
+        
+        input {
+            padding: 5px;
+            font-size: 16px;
+        }
+        
+        button {
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+        
+        .result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/deploy" method="post">
+        <button type="submit">Deploy</button>
+    </form>
+    <form action="/add" method="post">
+        <input type="number" name="num1" placeholder="Enter a number" required>
+        <input type="number" name="num2" placeholder="Enter another number" required>
+        <button type="submit">Add</button>
+    </form>
+    
+    <form action="/subtract" method="post">
+        <input type="number" name="num1" placeholder="Enter a number" required>
+        <input type="number" name="num2" placeholder="Enter another number" required>
+        <button type="submit">Subtract</button>
+    </form>
+    
+    <form action="/multiply" method="post">
+        <input type="number" name="num1" placeholder="Enter a number" required>
+        <input type="number" name="num2" placeholder="Enter another number" required>
+        <button type="submit">Mulitply</button>
+    </form>
+    
+    <form action="/divide" method="post">
+        <input type="number" name="num1" placeholder="Enter a number" required>
+        <input type="number" name="num2" placeholder="Enter another number" required>
+        <button type="submit">Divide</button>
+    </form>
+
+  
+    {% if result %}
+        <p class="result">Result: {{ result }}</p>
+    {% endif %}
+
+    {% if message %}
+            <p class="message">{{ message }}</p>
+    {% endif %}
+</body>
+</html>
+
